@@ -32,11 +32,12 @@ app.post("/", function(req,res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us10.api.mailchimp.com/3.0/lists/1926dcd8c1";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/1926dcd8c1";
+    // X is number which matches with us-X number in your api key
 
     const options = {
         method: "POST",
-        auth: "bhupali:12f784e0994329a947ab553f01d86963-us10",
+        auth: "bhupali: Your api key here",
     }
 
     const request = https.request(url, options, function(response){
